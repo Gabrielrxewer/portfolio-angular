@@ -1,0 +1,152 @@
+.atributos {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 120px;
+}
+.portfolio {
+  margin-top: 170px;
+  width: 500px;
+  height: 200px;
+  text-align: center;
+  background-image: linear-gradient(
+    to right,
+    rgb(60, 248, 185),
+    rgb(115, 93, 243)
+  );
+  border-radius: 50px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 3px 1px -2px rgba(0, 0, 0, 0.12), 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+  position: relative;
+  animation: title 10s linear 1s infinite alternate;
+}
+.port-animation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@keyframes title {
+  0% {
+    background-color: rgb(87, 209, 169);
+    left: 0px;
+    color: black;
+  }
+  20% {
+    background-color: rgb(98, 189, 158);
+    left: 40px;
+    color: black;
+  }
+  40% {
+    background-color: rgb(91, 163, 140);
+    left: -40px;
+    color: black;
+  }
+  60% {
+    background-color: rgb(122, 75, 209);
+    left: 40px;
+    color: white;
+  }
+  80% {
+    background-color: rgb(125, 97, 170);
+    left: -40px;
+    color: white;
+  }
+  100% {
+    background-color: rgb(75, 67, 145);
+    left: 40px;
+    color: white;
+  }
+}
+
+h1 {
+  text-align: center;
+  margin-left: -50px;
+  padding: 50px;
+}
+
+.infos {
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: white;
+  padding: 25px;
+  width: 20%;
+  border-radius: 50px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 3px 1px -2px rgba(0, 0, 0, 0.12), 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+}
+.title {
+  text-align: center;
+  padding: 15px;
+}
+.conteudo {
+  margin-left: 12%;
+  width: 75%;
+  text-align: center;
+  font-size: 20px;
+  text-decoration: double;
+}
+
+.butInfos {
+  margin-top: 15px;
+  margin-bottom: -5px;
+  border-radius: 12px;
+  padding: 5px;
+  width: 60%;
+  cursor: pointer;
+  transition: 0.7s;
+  border-style: none;
+  background-color: with;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 3px 1px -2px rgba(0, 0, 0, 0.12), 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.butInfos:hover {
+  background-color: black;
+  color: white;
+}
+
+.comp {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.72);
+  color: white;
+  width: 100%;
+  padding: 100%;
+  border-radius: 25px;
+  margin-bottom: 200px;
+}
+
+.close {
+  width: 2%;
+  color: red;
+  background-color: transparent;
+  border-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 25px;
+}
+
+ul.inf {
+  text-align: center;
+  background-color: white;
+  color: black;
+  width: 15%;
+  border-radius: 20px;
+  margin-left: 756px;
+  padding: 60px;
+}
+
+li {
+  color: black;
+  padding: 0px;
+}
+
+.h1show {
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  margin-left: 850px;
+}

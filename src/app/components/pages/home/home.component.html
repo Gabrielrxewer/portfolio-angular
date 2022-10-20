@@ -1,0 +1,89 @@
+<div class="container">
+  <div class="port-animation">
+    <div class="portfolio">
+      <h1>Conheça Gabriel Roewer</h1>
+      <p>Seja bem-vindo ao meu portfólio</p>
+    </div>
+  </div>
+  <div class="atributos">
+    <div class="infos">
+      <h2 class="title">Experiência</h2>
+      <p class="conteudo">
+        Trabalhou como Assistente Administrativo no setor de Manutenção da
+        Indústria e Comércio de Móveis Henn. <br />
+        <button (click)="tshowExp()" type="checkbox" class="butInfos">
+          Ver mais
+        </button>
+      </p>
+    </div>
+    <div class="infos">
+      <h2 class="title">Cursos</h2>
+      <p class="conteudo">
+        AngularJS - Matheus Battisti <br />
+        Java Script - CFB Cursos <br />
+        ReactJS - Matheus Battisti <br />
+        HTML/CSS Matheus Battisti <br />
+        <button (click)="tshowCur()" type="checkbox" class="butInfos">
+          Ver mais
+        </button>
+      </p>
+    </div>
+    <div class="infos">
+      <h2 class="title">Habilidades</h2>
+      <p class="conteudo">
+        AngularJS - JavaScript<br />
+        TypeScript - HTML/CSS <br />
+        ReactJS - NodeJS <br />
+        MongoDB - MySQL <br />
+        <button (click)="tshowHab()" type="checkbox" class="butInfos">
+          Ver mais
+        </button>
+      </p>
+    </div>
+    <div *ngIf="showFundo" class="comp">
+      <div *ngIf="showExp">
+        <h1 class="h1show">
+          Experiências
+          <button (click)="tshowExp()" type="checkbox" class="close">
+            <mat-icon>clear</mat-icon>
+          </button>
+        </h1>
+        <ul class="inf">
+          <li>
+            Trabalhou como Assistente Administrativo no setor de Manutenção da
+            Indústria e Comércio de Móveis Henn LTDA, trabalhou auxiliando as
+            funções de coordenação do setor, responsável pela emissão de ordens
+            de serviço e pelo planejamento das manutenções alinhadas juntamente
+            com a equipe técnica. Auxiliava também no departamento de compras de
+            manutenção, onde fez negociações com diversos fornecedores.
+            Trabalhou também no desenvolvimento e emissão de relatórios para
+            apresentação à diretoria e análise interna do setor. Trabalhou no
+            controle de ferramentas, sendo especialista em ferramentas!
+          </li>
+        </ul>
+      </div>
+      <div *ngIf="showCur">
+        <h1 class="h1show">
+          Cursos
+          <button (click)="tshowCur()" type="checkbox" class="close">
+            <mat-icon>clear</mat-icon>
+          </button>
+        </h1>
+        <ul class="inf">
+          <li *ngFor="let hab of hab">{{ hab.cur + "-" + hab.prof }}</li>
+        </ul>
+      </div>
+      <div *ngIf="showHab">
+        <h1 class="h1show">
+          Habilidades
+          <button (click)="tshowHab()" type="checkbox" class="close">
+            <mat-icon>clear</mat-icon>
+          </button>
+        </h1>
+        <ul class="inf">
+          <li *ngFor="let hab of hab">{{ hab.habi }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
